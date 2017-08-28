@@ -186,17 +186,17 @@ width: 40%;
 
 }
 
-@@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 470px) {
 
 .main {
   height: 15rem;
+  padding-bottom: 5rem;
 }
 
 .adv {
   position: relative;
   top: 10rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  padding: 1rem 2rem;
 }
 
 .adv h4 {
@@ -209,12 +209,21 @@ width: 40%;
   font-weight: bold;
 }
 
+.gallery {
+  justify-content: space-around;
+}
+
 .product {
   width: 90%;
 }
 
 .glasses, .watch {
   display: none;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
 }
 
 .info {
