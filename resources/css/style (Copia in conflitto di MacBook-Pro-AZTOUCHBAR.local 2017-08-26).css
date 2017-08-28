@@ -1,0 +1,49 @@
+.body {
+  font: helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+
+
+.container {
+  width: 100%;
+  margin:0 auto;
+  color: white;
+}
+
+.top {
+  height: 70px;
+  background-color: black;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.95rem;
+   max-width: 1024px;
+}
+
+.top img {
+  width:50px;
+  display: inline;
+  margin: 0 20px;
+}
+
+.head {
+  background-image: url("../img/moto.jpeg");
+  height: 30rem;
+  background-repeat: no-repeat;
+  max-width: 1024px;
+}
+
+.adv {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  top: 35%;
+}
+
+.head .adv h2 {
+  font-size: 2.5 rem;
+}
