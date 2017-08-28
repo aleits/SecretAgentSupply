@@ -1,14 +1,18 @@
 body {
   width:100%;
-  font-family: "Helvetica", "sans-serif";
+  font-family: Helvetica, sans-serif;
   font-size: 18px;
+  color:white;
+}
+
+div {
+  display: block;
 }
 
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
-  color: white;
 }
 
 .company {
@@ -16,7 +20,7 @@ body {
 }
 
 .top {
-  height: 2.32rem;
+  padding: 0.66rem 0 0.66rem 0.5rem;
   text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
@@ -26,12 +30,9 @@ body {
 
 .top img {
   height: 1.5rem;
-  margin: 0 0.5rem;
+  padding-right: 1rem;
 }
 
-.top>h4 {
-  margin-left: 0.5rem;
-}
 
 .main {
   background-image: url("../img/moto.jpeg");
@@ -39,12 +40,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  width: 100%;
 }
 
 .adv {
   width: 20rem;
-  /**height: 9.5rem;**/
   background-color: black;
   position: relative;
   top: 9rem;
@@ -66,9 +65,7 @@ body {
 }
 
 nav {
-  background-color: red;
-  width: 100%;
-  height: 2.5rem;
+  background-color: firebrick;
 
 }
 
@@ -78,50 +75,54 @@ ul {
 }
 
 li {
-  margin-top: 10px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .gallery {
   display: flex;
-  justify-content: space-around;
-  height: 18rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
 }
 
 .product {
-  text-align: center;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 30%;
 
 }
 
+.product h4 {
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
 
 .product-image {
-  display: flex;
-  border: 2px solid black;
+  border: 4px solid black;
   height: 9rem;
-  padding: 2rem;
+  padding: 2rem 0;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .product-image img {
-width: 60%;
+ max-width: 8rem;
 }
 
 
-
-.image-title {
-  background-color: black;
-  padding: 20px 0;
-  border: 2px solid black;
-
-}
 
 .infos {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 4rem;
@@ -132,15 +133,14 @@ width: 60%;
 
 }
 
-.info span h5 {
+.info span h4 {
   background-color: black;
   padding: 1rem 2rem;
 }
 
-.info>h5 {
+.info>h4 {
   color: black;
 }
-
 
 
 .footer {
@@ -148,6 +148,83 @@ width: 60%;
   height: 5rem;
 }
 
-.footer h5 {
+.footer h4 {
   padding: 2rem 0;
+}
+
+@media only screen and (max-width:1024px) {
+
+  html {
+      font-size: 16px;
+    }
+
+.desktop {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+
+}
+
+.product {
+  width: 47%;
+}
+
+.product-image img {
+width: 40%;
+}
+
+
+.info {
+  width: 35%;
+}
+
+.glasses {
+  display: none;
+}
+
+}
+
+@@media only screen and (max-width: 470px) {
+
+.main {
+  height: 15rem;
+}
+
+.adv {
+  position: relative;
+  top: 10rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.adv h4 {
+  font-size: 0.77rem;
+  font-weight: bold;
+}
+
+.adv h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.product {
+  width: 90%;
+}
+
+.glasses, .watch {
+  display: none;
+}
+
+.info {
+  width: 90%;
+  padding-bottom: 0.5rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+
 }
